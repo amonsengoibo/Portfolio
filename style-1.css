@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+
+body, html, h1 {
+	padding: 0;
+	margin: 0;
+	font-family: Arial;
+}
+body {
+	background-color : rgb(245, 245, 245);
+}
+header {
+
+	display : flex ;
+	justify-content: space-between ; 
+	position : sticky ;
+	top : 0;
+	height : 5vh ;
+	/*width : 100%;*/
+	padding: 20px;
+	background-color : rgb(245, 245, 245);
+	box-shadow : 0px 0px 6px black ;
+	/*border-bottom : 1px solid rgb(125, 125, 125);
+	/*border-right :1px solid rgb(125, 125, 125) ;*/
+}
+header section h1{
+	position : absolute ;
+	top: 5px;
+	left : 100px ;
+	font-family : DriftWood;
+	font-size : 55px;
+	color :  #912fff ;
+}
+nav {
+
+	margin : 0;
+	padding: 0;
+	font-family : Poppins, sans-serif;
+	position : relative ;
+	top :-25px ;
+	right : 100px ;
+	font-size: 15px;
+	
+}
+nav ul {
+	list-style-type: none ;
+	display : flex;
+	justify-content : space-around;
+}
+nav ul li {
+	padding: 20px;
+	padding-left : 40px;
+}
+nav a {
+	color : black;
+	text-decoration: none ;
+	transition : font-size 2s; 
+}
+nav a:hover {
+	color :  #912fff ;
+	border-bottom : 1px solid ;
+	font-size : 17px;
+
+}
+#lien{
+	color :  #912fff ;	
+}
+nav img {
+	display : none  ;
+	width: 55px;
+	height : 50px;
+
+}
+article#home {
+	display : flex ;
+	justify-content: space-around;
+	margin: 0;
+	padding : 0;
+	background: url('images/fond.jpg');
+	background-size: cover;
+	/*border: :1px solid ;*/
+	align-items: center;
+	/*width : 100%;*/
+	height: 80vh;
+	padding : 30px;
+}
+
+article#home section {
+	display : flex;
+	width : 60%;
+	padding : 20px;
+}
+article#home section img {
+	opacity: 0.95;
+}
+p#name{
+	padding: 0px;
+	margin: 0px;
+	font-family: Poppins, sans-serif;
+	font-size : 50px ;
+}
+p#student {
+	font-family : "exo2";
+	font-weight : bold;
+	font-size : 25px;
+}
+p#begin {
+	font-family : "exo2";
+	font-size : 25px;
+}
+p#contact{margin-top : 20px;}
+p#contact a {
+	
+	padding : 15px ;
+	background-color : rgba(145, 47, 255, 0.6);
+	text-align: center ; 
+	border-radius: 10px;
+	font-weight: bold;
+	color : black ;
+	text-decoration : none;
+	transition : font-size 2s; 
+}
+p#contact a:hover{
+	font-size : 20px;
+}
+
+a#home{
+	color:#912fff ;;
+}
+article#home aside {
+	margin-left: 0px ; 
+	margin-right: 0px;
+	margin-top : 40px;
+	display : flex ;
+	flex-direction : column ;
+	align-items: center ;
+	
+}
+article#home section aside {
+	display : none ;
+}
+article#home aside a {
+	font-size : 30px ;
+	margin : 10px ;
+	color :  #912fff;
+	transition : font-size 2s;
+}
+article#home aside a:hover{
+	font-size : 40px;
+}
+footer {
+	display : flex ;
+	justify-content: space-around;
+	background-color : #912fff ;
+	height : 40vh;
+	font-family : Poppins;
+	color : white ;
+}
+/*form {
+	display : none;
+	border : 1px solid ;
+}*/
+@media screen and (max-width: 892px){
+	nav ul {
+		display : none ;
+	}
+	nav img {
+		display : block;
+		position : absolute;
+		top : 20px ;
+		right : 10px;
+	}
+}
