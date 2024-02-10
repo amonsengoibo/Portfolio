@@ -1,0 +1,257 @@
+
+<!DOCTYPE HTML>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Accueil</title>
+		<link rel="stylesheet" href="./styles/style-1.css"/>
+		<style>
+
+			article#home section h1 {
+				/*position : absolute ;
+				top : 50px;
+				left: 80px;*/
+				font-family : Poppins, sans-serif;
+				font-size: 50px ;
+				font-weight: bold ;
+				background: url(images/fond.jpg);
+				background-size: cover;
+				background-position: center;
+				-webkit-background-clip : text;
+				-webkit-text-fill-color : transparent ;
+			}
+			
+		</style>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	</head>
+	<body>
+		<header>
+			<section>
+			  <h1>Avit</h1>
+			</section>
+			<nav>
+			  <ul>
+				<li><b><a href="#home" id="lien" >Home</a></b></li>
+				<li><a href="#about">About Me</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<!--<li><a href="#experience">Experience</a></li>-->
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contact Me</a></li>
+			  </ul>
+			  
+			  <div id="menu" onclick="menuAppearence(this)">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			  </div>
+			  <script>
+				function menuAppearence(x){
+					x.classList.toggle("change");
+				}
+				let menu=document.querySelector("nav ul");
+				let divMenu=document.getElementById("menu");
+				nbClick=0;
+				divMenu.addEventListener("click", ()=>{
+					nbClick++;
+					if(nbClick%2==1){
+						menu.style.display="flex";
+						menu.style.transition="display 0.5s";
+					}else {
+						menu.style.display="none";
+						menu.style.transition="display 0.5s";
+					}
+
+				});
+			  </script>
+
+			</nav>
+		  </header>
+		  <article id="home">
+			<aside>
+				<a href="https://www.facebook.com/avit.monsengo.52"><i class="fa-brands fa-facebook-f"></i></a>
+				<a href="https://fr.linkedin.com/in/avit-raphael-monsengo-4996a11b9"><i class="fa-brands fa-linkedin-in"></i></a>
+				<a href="https://www.instagram.com/avit_raphael_/"><i class="fa-brands fa-instagram"></i></a>
+			  </aside>
+			<section>
+			  <div id="text">
+				<h1>Hi, i'm Raphael</h1>
+				<p id="student">student in computer science </p>
+				<p id="begin"> i'm a beginner in web design and<br/> developpement but i do <br/>my best to improve my skills</p>
+			  </div>
+			  <div id="photo">
+				<img src="images/avit.png" width="300px" height="300px"/>
+			  </div>
+			</section>
+			
+		</section>	
+	</article>
+	
+	<article id="about">
+		<h1>About Me</h1>
+		<div id="insideAbout">
+			<img src="images/moi.jpeg"  width="370px" height="400px" />
+			<div>
+				<p id="description">Student in the 2nd year of a computer science
+				 license with various and varied skills in programming.</p>
+				<div id="information">
+					<p>
+						<span>02+</span><br/>
+						years<br/> experience
+					</p>
+					<p>
+						<span>01</span><br/>
+						completed<br/> projects
+					</p>
+					<p>
+						<span>00+</span><br/>
+						compagnies <br/> Worked
+					</p>
+					
+				</div>
+				<a href="CV-Avit.pdf" download="CV-Avit.pdf" id="download">
+					Download CV  <i class="fa-solid fa-download"></i>
+				</a>
+			</div>
+		
+			
+		</div>
+	</article>
+	
+	
+	<article id="skills">
+		<h1>Skills</h1>
+		<section class="skills">
+			<div class="skillCat">
+				<button class="dropdown-btn-1" onclick="myFunction()">
+					<span>
+						Frontend languages
+					</span>
+					<!--<i class="fa-solid fa-caret-down"></i>-->
+				</button>
+			<!--contenu du menu déroulant-->
+			<div id="myDropdown" class="front">
+				<div class="paragraphe"><p>HTML</p><p>90%</p></div>
+				<div class="container">
+  					<div class="skills html"></div>
+				</div>
+
+				<div class="paragraphe"><p>CSS</p><p>80%</p></div>
+				<div class="container">
+  					<div class="skills css"></div>
+				</div>
+
+				<div class="paragraphe"><p>JavaScript</p><p>65%</p></div>
+				<div class="container">
+  					<div class="skills js"></div>
+				</div>
+			</div>
+		</div>
+		<div class="skillCat">
+			<button class="dropdown-btn-2">
+				<span>Backend languages</span>
+				<!--<i class="fa-solid fa-caret-down"></i>-->
+			</button>
+			<!--contenu du menu déroulant-->
+			<div class="backend" id="myDropdown">
+		
+			
+				<div class="paragraphe"><p>PHP</p><p>60%</p></div>
+				<div class="container">
+	  				<div class="skills php"></div>
+				</div>
+				<div class="paragraphe"><p>SQL</p><p>75%</p></div>
+				<div class="container">
+  					<div class="skills sql"></div>
+				</div>
+			</div>
+		</div>
+		<div class="skillCat">
+			<script>
+			
+			</script>
+
+			<button class="dropdown-btn-3">
+				<span>Autres langages</span>
+				<!--<i class="fa-solid fa-caret-down"></i>-->
+			</button>
+
+			<!--contenu du menu déroulant-->
+			<div class="autre">
+					
+				<div class="paragraphe"><p>Bash</p><p>50%</p></div>
+				<div class="container">
+  					<div class="skills bash"></div>
+				</div>
+				<div class="paragraphe"><p>C++</p><p>50%</p></div>
+				<div class="container">
+  					<div class="skills cpp"></div>
+				</div>
+			</div>
+		</div>
+		</section>
+	</article>
+
+	<article id="portfolio">
+		<h1>Portfolio</h1>
+		<div id="projets">
+			<div class="projet">
+				<a href="Calendrier/index.html"><img src="images/calendrier.png" width="500px"></a>
+				<span><a href="Calendrier/index.html">Calendar</a></span>
+			</div>
+		</div>
+		<span class="prev"><i class="fa-solid fa-arrow-left"></i></span>
+		<span class="next"><i class="fa-solid fa-arrow-right"></i></span>
+	</article>
+	
+	<article id="contact">
+		<h1>Contact Me</h1>
+
+		<section class="contact">
+
+			<aside>
+				<div>
+					<h2><i class="fa-solid fa-phone" style="color : #912fff"></i>    Call me</h2>
+					<p style="color : grey;"> +33 6 44 70 71 88</p>
+				</div>
+				<div>
+					<h2><i class="fa-solid fa-envelope" style="color : #912fff"></i>    E-mail</h2>
+					<p style="color : grey;">avitraphael.monsengo@gmail.com </p>
+				</div>
+				<div>
+					<h2><i class="fa-solid fa-location-dot" style="color : #912fff"></i>    Location</h2>
+					<p style="color : grey;">Angers - France </p>				
+				</div>	
+			</aside>
+			
+			<form action=".php">
+				<div id="nameAndEmail">
+					<input type="text" id="name" name="nom" placeholder="Name"><br/>
+					<input type="text" id="email" name="email" placeholder="E-mail"><br/>
+				</div>
+				<input type="text" id="subject" name="objet" placeholder="subject"><br/>
+				<textarea id="message" name="message" placeholder="Message"></textarea><br/>
+				<input type="submit" id="submit" value="Send a message">
+			</form>	
+
+		</section>
+	</article>
+	<footer>
+		<section>
+			<h1>Avit</h1> 
+			<p>Etudiant en informatique</p>
+		</section>
+
+		<ul>
+			<li><a href="#About" style="color: white">About Me</a></li>
+			<li><a href="#portfolio" style="color: white">portfolio</a></li>
+			<li><a href="#contact" style="color: white">contact</a></li>	
+		</ul>
+		<aside>
+			<a href=""><i class="fa-brands fa-facebook-f" style="color: white"></i></a>
+			<a href=""><i class="fa-brands fa-linkedin-in" style="color: white"></i></a>
+			<a href=""><i class="fa-brands fa-instagram" style="color: white"></i></a>		
+		</aside>
+	</footer>
+	
+	</body>
+</html>
